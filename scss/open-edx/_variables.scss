@@ -83,8 +83,8 @@ $colors: map-merge(
   $colors
 );
 
-$primary:                 $blue !default;
-$secondary:               $indigo !default;
+$primary:                 $primary-wood !default;
+$secondary:               $secondary-wood !default;
 $success:                 $green !default;
 $info:                    $dark-blue !default;
 $warning:                 $yellow !default;
@@ -187,17 +187,17 @@ $sizes: map-merge(
 
 // Settings for the `<body>` element.
 
-$body-bg:                   $white !default;
-$body-color:                $gray-900 !default;
+$body-bg:                   $body-bg-wood !default;
+$body-color:                $body-color-wood !default;
 
 
 // Links
 
 // Style anchor elements.
 
-$link-color:                              theme-color("primary") !default;
+$link-color:                              $link-color-wood !default;
 $link-decoration:                         underline !default;
-$link-hover-color:                        darken($link-color, 15%) !default;
+$link-hover-color:                        $link-hover-color-wood !default;
 $link-hover-decoration:                   underline !default;
 // Darken percentage for links with `.text-*` class (e.g. `.text-success`)
 $emphasized-link-hover-darken-percentage: 15% !default;
@@ -266,7 +266,7 @@ $line-height-lg:              1.5 !default;
 $line-height-sm:              1.5 !default;
 
 $border-width:                2px !default;
-$border-color:                $gray-300 !default;
+$border-color:                $border-color-wood !default;
 
 $border-radius:               0.3rem !default;
 $border-radius-lg:            0.35rem !default;
@@ -331,8 +331,8 @@ $h5-font-size:                $font-size-base * 1.25 !default;
 $h6-font-size:                $font-size-base !default;
 
 $headings-margin-bottom:      $spacer / 2 !default;
-$headings-font-family:        $font-family-serif !default;
-$headings-font-weight:        $font-weight-bold !default;
+$headings-font-family:        $headings-font-family-wood !default;
+$headings-font-weight:        $headings-font-weight-wood !default;
 $headings-line-height:        1.2 !default;
 $headings-color:              inherit !default;
 
@@ -352,7 +352,7 @@ $lead-font-weight:            $font-weight-base !default;
 
 $small-font-size:             80% !default;
 
-$text-muted:                  $gray-600 !default;
+$text-muted:                  $text-muted-wood !default;
 
 $blockquote-small-color:      $gray-600 !default;
 $blockquote-small-font-size:  $small-font-size !default;
@@ -832,7 +832,7 @@ $card-border-color:                 rgba($black, 0.125) !default;
 $card-inner-border-radius:          calc(#{$card-border-radius} - #{$card-border-width}) !default;
 $card-cap-bg:                       rgba($black, 0.03) !default;
 $card-cap-color:                    inherit !default;
-$card-bg:                           $white !default;
+$card-bg:                           $card-bg-wood !default;
 
 $card-img-overlay-padding:          1.25rem !default;
 

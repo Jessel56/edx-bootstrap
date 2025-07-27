@@ -1,0 +1,249 @@
+// Dark Wood & Brass Library Theme - Component Overrides
+// This file provides additional styling to ensure the dark wood theme is consistently applied
+
+// Global body styling for dark wood theme
+body {
+  background-color: var(--wood-bg) !important;
+  color: var(--paper) !important;
+}
+
+// Ensure all headings use Cormorant Garamond and paper color
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-family: "Cormorant Garamond", serif !important;
+  color: var(--paper) !important;
+}
+
+// Button styling enhancements
+.btn {
+  // Primary buttons with brass color
+  &.btn-primary {
+    background-color: var(--brass) !important;
+    border-color: var(--brass) !important;
+    color: var(--ink) !important;
+    box-shadow: var(--wood-shadow) !important;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: var(--accent) !important;
+      border-color: var(--accent) !important;
+      color: var(--paper) !important;
+    }
+  }
+
+  // Link-style buttons
+  &.btn-link {
+    color: var(--brass) !important;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: var(--accent) !important;
+    }
+  }
+}
+
+// Link styling
+a {
+  color: var(--brass) !important;
+
+  &:hover,
+  &:focus {
+    color: var(--accent) !important;
+  }
+}
+
+// Card styling for dark wood theme
+.card {
+  background-color: var(--wood-dark) !important;
+  border: 1px solid var(--accent) !important;
+  box-shadow: var(--wood-shadow) !important;
+  color: var(--paper) !important;
+
+  .card-header {
+    background-color: var(--wood-bg) !important;
+    border-bottom: 1px solid var(--accent) !important;
+    color: var(--paper) !important;
+  }
+
+  .card-footer {
+    background-color: var(--wood-bg) !important;
+    border-top: 1px solid var(--accent) !important;
+    color: var(--paper) !important;
+  }
+
+  .card-title {
+    color: var(--paper) !important;
+    font-family: "Cormorant Garamond", serif !important;
+  }
+}
+
+// Navigation tabs styling
+.nav-tabs {
+  background-color: var(--wood-dark) !important;
+  border-bottom: 1px solid var(--accent) !important;
+
+  .nav-link {
+    color: var(--paper) !important;
+    border: 1px solid transparent !important;
+
+    &.active,
+    &.show {
+      color: var(--brass) !important;
+      background-color: var(--wood-bg) !important;
+      border-color: var(--accent) var(--accent) var(--wood-bg) !important;
+    }
+
+    &:hover,
+    &:focus {
+      color: var(--brass) !important;
+      border-color: var(--accent) var(--accent) transparent !important;
+    }
+  }
+}
+
+// Dropdown styling
+.dropdown-menu {
+  background-color: var(--wood-dark) !important;
+  border: 1px solid var(--accent) !important;
+  box-shadow: var(--wood-shadow) !important;
+
+  .dropdown-item {
+    color: var(--paper) !important;
+
+    &:hover,
+    &:focus {
+      background-color: var(--wood-bg) !important;
+      color: var(--brass) !important;
+    }
+  }
+
+  .dropdown-header {
+    color: var(--brass) !important;
+  }
+}
+
+// Modal styling
+.modal-content {
+  background-color: var(--paper) !important;
+  border: 1px solid var(--accent) !important;
+  color: var(--ink) !important;
+
+  .modal-header {
+    border-bottom: 1px solid var(--accent) !important;
+
+    .modal-title {
+      color: var(--ink) !important;
+      font-family: "Cormorant Garamond", serif !important;
+    }
+  }
+
+  .modal-footer {
+    border-top: 1px solid var(--accent) !important;
+  }
+}
+
+// Form elements styling
+.form-control {
+  background-color: var(--paper) !important;
+  border: 1px solid var(--accent) !important;
+  color: var(--ink) !important;
+
+  &:focus {
+    background-color: var(--paper) !important;
+    border-color: var(--brass) !important;
+    color: var(--ink) !important;
+    box-shadow: 0 0 0 0.2rem rgba(191, 167, 90, 0.25) !important;
+  }
+
+  &::placeholder {
+    color: rgba(50, 38, 26, 0.6) !important;
+  }
+}
+
+// Table styling
+.table {
+  color: var(--paper) !important;
+
+  th,
+  td {
+    border-color: var(--accent) !important;
+  }
+
+  thead th {
+    background-color: var(--wood-bg) !important;
+    color: var(--paper) !important;
+  }
+
+  &.table-dark {
+    background-color: var(--wood-dark) !important;
+  }
+}
+
+// List group styling
+.list-group-item {
+  background-color: var(--wood-dark) !important;
+  border: 1px solid var(--accent) !important;
+  color: var(--paper) !important;
+
+  &.active {
+    background-color: var(--brass) !important;
+    border-color: var(--brass) !important;
+    color: var(--ink) !important;
+  }
+
+  &:hover {
+    background-color: var(--wood-bg) !important;
+  }
+}
+
+// Alert styling
+.alert {
+  border: 1px solid var(--accent) !important;
+
+  &.alert-primary {
+    background-color: rgba(191, 167, 90, 0.1) !important;
+    border-color: var(--brass) !important;
+    color: var(--brass) !important;
+  }
+}
+
+// Badge styling
+.badge {
+  &.badge-primary {
+    background-color: var(--brass) !important;
+    color: var(--ink) !important;
+  }
+}
+
+// Pagination styling
+.pagination {
+  .page-link {
+    background-color: var(--wood-dark) !important;
+    border: 1px solid var(--accent) !important;
+    color: var(--paper) !important;
+
+    &:hover,
+    &:focus {
+      background-color: var(--wood-bg) !important;
+      color: var(--brass) !important;
+    }
+  }
+
+  .page-item.active .page-link {
+    background-color: var(--brass) !important;
+    border-color: var(--brass) !important;
+    color: var(--ink) !important;
+  }
+}

@@ -1,0 +1,69 @@
+// Dark Wood & Brass Library Theme Variables
+// Shared theme variables for consistent application across both edx and open-edx themes
+
+// Define the dark wood and brass color palette
+$wood-bg: #20160e !default;        // Dark wood background
+$paper: #f4ecd8 !default;          // Cream/beige paper color for text
+$brass: #bfa75a !default;          // Golden brass primary color
+$wood-dark: #36281b !default;      // Darker wood for surfaces and components
+$ink: #32261a !default;            // Dark ink color for text on light surfaces
+$accent: #7f5c27 !default;         // Darker brass accent for hover states
+$wood-shadow: 0 2px 8px rgba(54, 40, 27, 0.18) !default; // Subtle wood-toned shadow
+
+// CSS Custom Properties for modern browser support
+// These can be used in conjunction with SCSS variables
+:root {
+  --wood-bg: #{$wood-bg};
+  --paper: #{$paper};
+  --brass: #{$brass};
+  --wood-dark: #{$wood-dark};
+  --ink: #{$ink};
+  --accent: #{$accent};
+  --wood-shadow: #{$wood-shadow};
+}
+
+// Typography settings for Cormorant Garamond
+$headings-font-family-wood: "Cormorant Garamond", serif !default;
+$headings-font-weight-wood: 600 !default;
+
+// Updated color mappings for dark wood theme
+$primary-wood: $brass !default;
+$secondary-wood: $accent !default;
+$body-bg-wood: $wood-bg !default;
+$body-color-wood: $paper !default;
+$text-muted-wood: rgba(244, 236, 216, 0.7) !default;
+$border-color-wood: $accent !default;
+$link-color-wood: $brass !default;
+$link-hover-color-wood: $accent !default;
+
+// Component-specific wood theme colors
+$card-bg-wood: $wood-dark !default;
+$card-border-color-wood: $accent !default;
+$card-cap-bg-wood: $wood-bg !default;
+
+$nav-tabs-bg-wood: $wood-dark !default;
+$nav-tabs-border-color-wood: $accent !default;
+$nav-tabs-link-active-bg-wood: $wood-bg !default;
+$nav-tabs-link-active-color-wood: $brass !default;
+
+$btn-primary-bg-wood: $brass !default;
+$btn-primary-border-wood: $brass !default;
+$btn-primary-color-wood: $ink !default;
+$btn-primary-hover-bg-wood: $accent !default;
+$btn-primary-hover-border-wood: $accent !default;
+$btn-primary-hover-color-wood: $paper !default;
+
+$dropdown-bg-wood: $wood-dark !default;
+$dropdown-border-color-wood: $accent !default;
+$dropdown-link-color-wood: $paper !default;
+$dropdown-link-hover-bg-wood: $wood-bg !default;
+$dropdown-link-hover-color-wood: $brass !default;
+
+$modal-content-bg-wood: $paper !default;
+$modal-content-border-color-wood: $accent !default;
+$modal-header-border-color-wood: $accent !default;
+
+$table-bg-wood: $wood-dark !default;
+$table-border-color-wood: $accent !default;
+$table-head-bg-wood: $wood-bg !default;
+$table-head-color-wood: $paper !default;
