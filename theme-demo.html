@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Wood & Brass Library Theme - Demo</title>
+    <link rel="stylesheet" href="dist/edx/theme.css">
+    <style>
+        .demo-container {
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .component-section {
+            margin-bottom: 3rem;
+        }
+        .component-section h2 {
+            border-bottom: 2px solid var(--accent);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+        .demo-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="demo-container">
+        <h1>Dark Wood & Brass Library Theme</h1>
+        <p class="lead">A sophisticated theme inspired by classic library aesthetics, featuring rich wood tones, warm brass accents, and elegant Cormorant Garamond typography.</p>
+
+        <div class="component-section">
+            <h2>Colors & Typography</h2>
+            <div class="demo-grid">
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">Color Palette</h3>
+                    </div>
+                    <div class="card-body">
+                        <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                            <div style="background-color: var(--wood-bg); width: 60px; height: 60px; border-radius: 4px; border: 1px solid var(--accent);"></div>
+                            <div style="background-color: var(--wood-dark); width: 60px; height: 60px; border-radius: 4px; border: 1px solid var(--accent);"></div>
+                            <div style="background-color: var(--brass); width: 60px; height: 60px; border-radius: 4px; border: 1px solid var(--accent);"></div>
+                            <div style="background-color: var(--accent); width: 60px; height: 60px; border-radius: 4px; border: 1px solid var(--accent);"></div>
+                            <div style="background-color: var(--paper); width: 60px; height: 60px; border-radius: 4px; border: 1px solid var(--accent);"></div>
+                        </div>
+                        <p><small>Wood BG • Wood Dark • Brass • Accent • Paper</small></p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">Typography Showcase</h3>
+                    </div>
+                    <div class="card-body">
+                        <h1>Heading 1</h1>
+                        <h2>Heading 2</h2>
+                        <h3>Heading 3</h3>
+                        <p>Regular paragraph text in Roboto font family.</p>
+                        <p class="text-muted">Muted text example</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="component-section">
+            <h2>Buttons & Links</h2>
+            <div class="demo-grid">
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">Button Styles</h3>
+                    </div>
+                    <div class="card-body">
+                        <button class="btn btn-primary">Primary Button</button>
+                        <button class="btn btn-secondary">Secondary Button</button>
+                        <button class="btn btn-link">Link Button</button>
+                        <br><br>
+                        <button class="btn btn-success">Success</button>
+                        <button class="btn btn-warning">Warning</button>
+                        <button class="btn btn-danger">Danger</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">Links & Text</h3>
+                    </div>
+                    <div class="card-body">
+                        <p><a href="#">Regular link example</a></p>
+                        <p><a href="#" class="text-primary">Primary colored link</a></p>
+                        <p>Text with <a href="#">inline links</a> in content.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="component-section">
+            <h2>Navigation & Tabs</h2>
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="card-title">Tab Navigation</h3>
+                </div>
+                <div class="card-body">
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#tab1" role="tab">Active Tab</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#tab2" role="tab">Tab Two</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#tab3" role="tab">Tab Three</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content mt-3">
+                        <div class="tab-pane active" id="tab1">
+                            <p>This is the content for the active tab. The tab navigation uses the wood and brass theme colors.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="component-section">
+            <h2>Cards & Components</h2>
+            <div class="demo-grid">
+                <div class="card">
+                    <div class="card-header">
+                        <h4 class="card-title">Card with Header</h4>
+                    </div>
+                    <div class="card-body">
+                        <p>This card demonstrates the dark wood theme applied to Bootstrap cards with proper header and body sections.</p>
+                        <a href="#" class="btn btn-primary">Card Action</a>
+                    </div>
+                    <div class="card-footer">
+                        Card footer with wood theme
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Simple Card</h4>
+                        <p>A simpler card without header/footer, showing the wood-dark background with accent borders.</p>
+                        <p>The shadows and colors create depth consistent with the library aesthetic.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="component-section">
+            <h2>Forms & Alerts</h2>
+            <div class="demo-grid">
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">Form Elements</h3>
+                    </div>
+                    <div class="card-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="exampleInput">Text Input</label>
+                                <input type="text" class="form-control" id="exampleInput" placeholder="Enter text...">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleSelect">Select</label>
+                                <select class="form-control" id="exampleSelect">
+                                    <option>Option 1</option>
+                                    <option>Option 2</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">Alerts</h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="alert alert-primary">
+                            <strong>Primary Alert:</strong> This is a primary alert using the brass color scheme.
+                        </div>
+                        <div class="alert alert-success">
+                            <strong>Success:</strong> Action completed successfully.
+                        </div>
+                        <div class="alert alert-warning">
+                            <strong>Warning:</strong> Please review this information.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="component-section">
+            <h2>List Groups & Tables</h2>
+            <div class="demo-grid">
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">List Group</h3>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-group">
+                            <li class="list-group-item active">Active list item</li>
+                            <li class="list-group-item">Regular list item</li>
+                            <li class="list-group-item">Another list item</li>
+                            <li class="list-group-item">Final list item</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">Table Example</h3>
+                    </div>
+                    <div class="card-body">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Course</th>
+                                    <th>Status</th>
+                                    <th>Progress</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Introduction to Literature</td>
+                                    <td><span class="badge badge-primary">Active</span></td>
+                                    <td>75%</td>
+                                </tr>
+                                <tr>
+                                    <td>History of Libraries</td>
+                                    <td><span class="badge badge-secondary">Complete</span></td>
+                                    <td>100%</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
